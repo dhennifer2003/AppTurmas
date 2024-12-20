@@ -2,8 +2,9 @@ import React from 'react';
 import { Pressable, Text, StyleSheet } from 'react-native';
 
 export default function Button({ title, onPress, variant = "primary" }) {
-  const bgColor = variant === "primary" ? "#28a745" : "#ddd";  // Verde para 'c', cinza para outros
+  const bgColor = variant === "primary" ? "#28a745" : "#29292E";  // Verde para 'c', cinza para outros
   const textColor = "#fff";
+  
 
   return (
     <Pressable style={[styles.button, { backgroundColor: bgColor }]} onPress={onPress}>
